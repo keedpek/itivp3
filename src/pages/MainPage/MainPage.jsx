@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './MainPage.module.css'
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import CountryCard from '../../components/CountryCard/CountryCard';
 import { countriesList } from '../../utils/db';
 import { searchIcon } from '../../assets/svg';
-import Footer from '../../components/Footer/Footer';
 import Pagination from '../../components/Pagination/Pagination';
 
 const MainPage = () => {

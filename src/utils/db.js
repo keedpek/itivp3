@@ -1,3 +1,4 @@
+//main page countries list
 import croatia from '../assets/images/countries/croatia.webp'
 import nigeria from '../assets/images/countries/Nigeria.webp'
 import ontario from '../assets/images/countries/Ontario.webp'
@@ -11,18 +12,13 @@ import japan from '../assets/images/countries/japan.webp'
 import jordan from '../assets/images/countries/jordan.webp'
 import nambia from '../assets/images/countries/nambia.webp'
 
-
-
+//stories page stories list
 import hawaiiStories from '../assets/images/stories/the-best-time-to-visit-hawaii.webp';
 import puertoRicoStories from '../assets/images/stories/10-ways-to see-puerto-rico-on-a-budget.webp';
 import sanAntonioStories from '../assets/images/stories/6-best-day-trip-to-san-antonio-texas.webp';
 import pragueStories from '../assets/images/stories/5-of-the-best-places-to-visit-as-a-disabled.webp';
 import budapestStories from '../assets/images/stories/fun-visit-to-budapest.webp';
 import athensStories from '../assets/images/stories/how-to-move-around-athens.webp';
-
-
-
-
 
 export const countriesList = [
   {
@@ -98,7 +94,6 @@ export const countriesList = [
     photo: nambia,
   },
 ];
-
 
 export const storiesList = [
   {
