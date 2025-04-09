@@ -1,15 +1,28 @@
 {
   "files": {
-    "main.css": "/itivp3/static/css/main.a88667c3.css",
-    "main.js": "/itivp3/static/js/main.2312e8c9.js",
+    "main.css": "/itivp3/static/css/main.4e2c39e2.css",
+    "main.js": "/itivp3/static/js/main.02839e31.js",
+    "static/media/main-background.webp": "/itivp3/static/media/main-background.a2e06e52de99689b797c.webp",
+    "static/media/jordan.webp": "/itivp3/static/media/jordan.cc40c6a87ea320422d60.webp",
+    "static/media/china.webp": "/itivp3/static/media/china.b19b53999613ff104fa8.webp",
+    "static/media/japan.webp": "/itivp3/static/media/japan.7bc7e36c25692d80530a.webp",
+    "static/media/hawaii.webp": "/itivp3/static/media/hawaii.36b6be1462fdc55297f0.webp",
+    "static/media/Nigeria.webp": "/itivp3/static/media/Nigeria.214aefbf3c4a8f662fd8.webp",
+    "static/media/denmark.webp": "/itivp3/static/media/denmark.f2bebae1bfde13211ffc.webp",
+    "static/media/brazil.webp": "/itivp3/static/media/brazil.dc5003b12fb357a198d6.webp",
+    "static/media/nambia.webp": "/itivp3/static/media/nambia.b1e7aae77e99e612ba52.webp",
     "static/media/euclid-flex.ttf": "/itivp3/static/media/euclid-flex.f4048ce40bd0d394eb85.ttf",
+    "static/media/greece.webp": "/itivp3/static/media/greece.f21c6d1aa5991c8318b3.webp",
+    "static/media/dominican-republic.webp": "/itivp3/static/media/dominican-republic.1aad6f33359a6e06fdaf.webp",
+    "static/media/Ontario.webp": "/itivp3/static/media/Ontario.36ebbd697cab8e70dfdb.webp",
+    "static/media/croatia.webp": "/itivp3/static/media/croatia.09abc13689cf74284e50.webp",
     "static/media/logo.png": "/itivp3/static/media/logo.0d1891e51f5d3de71b15.png",
     "index.html": "/itivp3/index.html",
-    "main.a88667c3.css.map": "/itivp3/static/css/main.a88667c3.css.map",
-    "main.2312e8c9.js.map": "/itivp3/static/js/main.2312e8c9.js.map"
+    "main.4e2c39e2.css.map": "/itivp3/static/css/main.4e2c39e2.css.map",
+    "main.02839e31.js.map": "/itivp3/static/js/main.02839e31.js.map"
   },
   "entrypoints": [
-    "static/css/main.a88667c3.css",
-    "static/js/main.2312e8c9.js"
+    "static/css/main.4e2c39e2.css",
+    "static/js/main.02839e31.js"
   ]
 }
