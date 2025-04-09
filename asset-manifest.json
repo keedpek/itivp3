@@ -1,9 +1,16 @@
 {
   "files": {
-    "main.css": "/itivp3/static/css/main.4e2c39e2.css",
-    "main.js": "/itivp3/static/js/main.02839e31.js",
+    "main.css": "/itivp3/static/css/main.5be25fef.css",
+    "main.js": "/itivp3/static/js/main.2f918890.js",
+    "static/media/stories-main-bg.webp": "/itivp3/static/media/stories-main-bg.a336442af413a27a658e.webp",
     "static/media/main-background.webp": "/itivp3/static/media/main-background.a2e06e52de99689b797c.webp",
+    "static/media/10-ways-to see-puerto-rico-on-a-budget.webp": "/itivp3/static/media/10-ways-to see-puerto-rico-on-a-budget.5485bb69f3355d521d2b.webp",
+    "static/media/the-best-time-to-visit-hawaii.webp": "/itivp3/static/media/the-best-time-to-visit-hawaii.18a80e30438fe6e7d6a7.webp",
+    "static/media/fun-visit-to-budapest.webp": "/itivp3/static/media/fun-visit-to-budapest.cb6ee6b639572f2ec477.webp",
+    "static/media/6-best-day-trip-to-san-antonio-texas.webp": "/itivp3/static/media/6-best-day-trip-to-san-antonio-texas.562a17d2665f62650ff0.webp",
+    "static/media/5-of-the-best-places-to-visit-as-a-disabled.webp": "/itivp3/static/media/5-of-the-best-places-to-visit-as-a-disabled.66d7f123a66fe39bffc1.webp",
     "static/media/jordan.webp": "/itivp3/static/media/jordan.cc40c6a87ea320422d60.webp",
+    "static/media/how-to-move-around-athens.webp": "/itivp3/static/media/how-to-move-around-athens.a476bf6a76c3d9142835.webp",
     "static/media/china.webp": "/itivp3/static/media/china.b19b53999613ff104fa8.webp",
     "static/media/japan.webp": "/itivp3/static/media/japan.7bc7e36c25692d80530a.webp",
     "static/media/hawaii.webp": "/itivp3/static/media/hawaii.36b6be1462fdc55297f0.webp",
@@ -18,11 +25,11 @@
     "static/media/croatia.webp": "/itivp3/static/media/croatia.09abc13689cf74284e50.webp",
     "static/media/logo.png": "/itivp3/static/media/logo.0d1891e51f5d3de71b15.png",
     "index.html": "/itivp3/index.html",
-    "main.4e2c39e2.css.map": "/itivp3/static/css/main.4e2c39e2.css.map",
-    "main.02839e31.js.map": "/itivp3/static/js/main.02839e31.js.map"
+    "main.5be25fef.css.map": "/itivp3/static/css/main.5be25fef.css.map",
+    "main.2f918890.js.map": "/itivp3/static/js/main.2f918890.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e2c39e2.css",
-    "static/js/main.02839e31.js"
+    "static/css/main.5be25fef.css",
+    "static/js/main.2f918890.js"
   ]
 }
