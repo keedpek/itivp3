@@ -1,0 +1,120 @@
+.stories-page-main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  background-image: url("../../assets/images/pageImages/stories-main-bg.webp");
+  position: relative;
+}
+
+.stories-page-main-section::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000002b;
+}
+
+.main-section-text-container {
+  text-align: center;
+  width: 70%;
+  z-index: 10;
+}
+
+.main-section-text-container > h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40pt;
+}
+
+.stories-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 5%;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.stories-section > h2 {
+  background: linear-gradient(135deg, #5c7bd8 0%, #4169e1 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header h3 {
+  font-size: 36px;
+}
+
+.section-header span {
+  font-size: 14px;
+  color: #404040;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  border: 1px solid #4169e1;
+  border-radius: 30px;
+  color: #4169e1;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.view-all-btn:hover {
+  transform: scale(0.95);
+}
+
+.stories-container {
+  width: 100%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .stories-page-main-section {
+    height: 600px;
+  }
+
+  .main-section-text-container h2 {
+    font-size: 30pt;
+  }
+}
+
+@media (max-width: 768px) {
+  .stories-page-main-section {
+    height: 350px;
+  }
+
+  .main-section-text-container h2 {
+    font-size: 24pt;
+  }
+
+  .stories-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 428px) {
+  .stories-page-main-section {
+    height: 200px;
+  }
+
+  .main-section-text-container h2 {
+    font-size: 18pt;
+  }
+}

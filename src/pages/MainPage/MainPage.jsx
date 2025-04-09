@@ -5,12 +5,14 @@ import CountryCard from '../../components/CountryCard/CountryCard';
 import { countriesList } from '../../utils/db';
 import { searchIcon } from '../../assets/svg';
 import Footer from '../../components/Footer/Footer';
+import Pagination from '../../components/Pagination/Pagination';
 
 const MainPage = () => {
   return (
-    <main>
-      <Header/>
-      
+    <>
+    <Header/>
+
+    <main>  
       <section className={style["main-section-container"]}>
         <div className={style["main-section-text-container"]}>
           <h2>
@@ -39,20 +41,11 @@ const MainPage = () => {
         {countriesList.map(country => <CountryCard country={country} />)}
       </section>
 
-      <div className={style["pagination"]}>
-        <button className={style["prev"]}>&laquo;</button>
-        <button className={style["active"]}>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <span>...</span>
-        <button>10</button>
-        <button className={style["next"]}>&raquo;</button>
-      </div>
-
-      <Footer/>
+      <Pagination/>
     </main>
+
+    <Footer/>
+    </>
   );
 };
 

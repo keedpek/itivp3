@@ -1,0 +1,31 @@
+.story-component {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.story-component > img {
+  border-radius: 32px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #5b5b5b;
+  font-size: 18px;
+}
+
+.story-title {
+  font-size: 26px;
+}
+
+.short-story {
+  font-size: 14px;
+}
+
+.full-post-link {
+  text-decoration: none;
+  color: #4169e1;
+  font-size: 18px;
+}

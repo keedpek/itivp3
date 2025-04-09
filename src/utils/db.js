@@ -11,6 +11,19 @@ import japan from '../assets/images/countries/japan.webp'
 import jordan from '../assets/images/countries/jordan.webp'
 import nambia from '../assets/images/countries/nambia.webp'
 
+
+
+import hawaiiStories from '../assets/images/stories/the-best-time-to-visit-hawaii.webp';
+import puertoRicoStories from '../assets/images/stories/10-ways-to see-puerto-rico-on-a-budget.webp';
+import sanAntonioStories from '../assets/images/stories/6-best-day-trip-to-san-antonio-texas.webp';
+import pragueStories from '../assets/images/stories/5-of-the-best-places-to-visit-as-a-disabled.webp';
+import budapestStories from '../assets/images/stories/fun-visit-to-budapest.webp';
+import athensStories from '../assets/images/stories/how-to-move-around-athens.webp';
+
+
+
+
+
 export const countriesList = [
   {
     name: 'Хорватия',
@@ -83,5 +96,51 @@ export const countriesList = [
     continent: 'Африка',
     href: 'nambia',
     photo: nambia,
+  },
+];
+
+
+export const storiesList = [
+  {
+    title: 'Лучшее Время для Посещения Гаваи',
+    short: 'Меня всегда интересовала духовность, поэтому я решил совершить годичное путешествие в Индию, чтобы изучить различные религиозные практики и традиции.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Гаваи, США',
+    photo: hawaiiStories,
+  },
+  {
+    title: '10 Способов Увидеть Пуэрто-Рико с Ограниченным Бюджетом',
+    short: 'Я только что окончил колледж и решил отправиться в шестимесячное одиночное путешествие по Европе, прежде чем начать свою карьеру. Я путешествовал с рюкзаком по 15 разным странам, останавливаясь в хостелах и встречаясь с людьми.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Пуэрто-Рико, США',
+    photo: puertoRicoStories,
+  },
+  {
+    title: '6 Лучших Дней из Путешествия в Сан-Антонио, Техас',
+    short: 'Было прекрасное весеннее утро, когда я прибыл в Катманду, столицу Непала. Как только я вышел из аэропорта, меня поразили яркие краски и хаос на улицах.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Сан-Антонио, Техас',
+    photo: sanAntonioStories,
+  },
+  {
+    title: '5 Лучших Мест для Посещения Людьми с Ограниченными Возможностями',
+    short: 'Я посетил Прагу, прекрасную столицу Чешской Республики, и одним из моих любимых мест в городе был холм Петрин. Холм Петрин - это зеленый оазис в самом сердце Праги.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Прага, Чехия',
+    photo: pragueStories,
+  },
+  {
+    title: 'Веселая Поездка в Будапешт',
+    short: 'Меня всегда интересовала духовность, поэтому я решил совершить годичное путешествие в Индию, чтобы изучить различные религиозные практики и традиции.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Будапешт, Венгрия',
+    photo: budapestStories,
+  },
+  {
+    title: 'Как передвигаться по Афинам',
+    short: 'Я только что окончил колледж и решил отправиться в шестимесячное одиночное путешествие по Европе, прежде чем начать свою карьеру. Я путешествовал с рюкзаком по 15 разным странам, останавливаясь в хостелах и встречаясь с людьми.',
+    time: '27 фев, 2024 • ⏲ 8 мин',
+    place: 'Афины, Греция',
+    photo: athensStories,
   },
 ];
