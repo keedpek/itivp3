@@ -1,0 +1,6 @@
+export const MAIN_ROUTE = '/'
+export const STORIES_ROUTE = '/stories'
+export const GALLERY_ROUTE = '/gallery'
+export const ABOUT_ROUTE = '/about'
+export const COUNTRY_ROUTE = '/countries'
+export const STORY_ROUTE = '/story'
