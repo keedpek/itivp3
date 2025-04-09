@@ -2,13 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import style from './Header.module.css'
 import { MAIN_ROUTE, STORIES_ROUTE, GALLERY_ROUTE, ABOUT_ROUTE } from '../../utils/consts';
+import logo from '../../assets/images/logo.png'
 
 const Header = () => {
   const navigate = useNavigate()
   return (
     <header>
-      <img src='../../assets/images/logo.png' alt="logo" />
-      <nav class="header-nav-menu">
+      <img src={logo} alt="logo" />
+      <nav className={style["header-nav-menu"]}>
         <ul>
           <li>
             <button
@@ -44,16 +45,16 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div class="header-buttons">
-        <button class="header-signup-btn">Зарегистрироваться</button>
-        <button class="header-signin-btn">Войти</button>
+      <div className={style["header-buttons"]}>
+        <button className={style["header-signup-btn"]}>Зарегистрироваться</button>
+        <button className={style["header-signin-btn"]}>Войти</button>
       </div>
-      <button class="burger-menu">
+      <button className={style["burger-menu"]}>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="mobile-menu">
+      <nav className={style["mobile-menu"]}>
         <ul>
           <li><a href="./index.html">Главная</a></li>
           <li><a href="./stories/index.html">Истории</a></li>

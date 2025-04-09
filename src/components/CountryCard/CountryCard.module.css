@@ -1,0 +1,38 @@
+.country-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.country-component:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.country-component > img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
+
+.country-component > h5 {
+  color: #5b5b5b;
+  font-size: 20px;
+}
+
+.country-component > h4 {
+  font-size: 26px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .country-component {
+    align-items: center;
+  }
+
+  .country-component > h4 {
+    font-size: 20px;
+  }
+}

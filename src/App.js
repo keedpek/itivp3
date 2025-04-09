@@ -4,7 +4,7 @@ import AppRouter from "./routes/AppRouter";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/itivp3/">
         <AppRouter />
       </BrowserRouter>
     </div>
