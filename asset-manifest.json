@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/itivp3/static/css/main.7e317344.css",
-    "main.js": "/itivp3/static/js/main.53848bd4.js",
+    "main.css": "/itivp3/static/css/main.3685f339.css",
+    "main.js": "/itivp3/static/js/main.18007232.js",
     "static/media/stories-main-bg.webp": "/itivp3/static/media/stories-main-bg.a336442af413a27a658e.webp",
     "static/media/mixkit-mime-in-front-of-the-eiffel-tower.mp4": "/itivp3/static/media/mixkit-mime-in-front-of-the-eiffel-tower.35cc2ad499abb570dcba.mp4",
     "static/media/croatiaPage.webp": "/itivp3/static/media/croatiaPage.dcd7799473d1b08ae00e.webp",
     "static/media/main-background.webp": "/itivp3/static/media/main-background.a2e06e52de99689b797c.webp",
     "static/media/10-ways-to see-puerto-rico-on-a-budget.webp": "/itivp3/static/media/10-ways-to see-puerto-rico-on-a-budget.5485bb69f3355d521d2b.webp",
+    "static/media/about-me-page.webp": "/itivp3/static/media/about-me-page.24a0101d8eb321816508.webp",
     "static/media/the-best-time-to-visit-hawaii.webp": "/itivp3/static/media/the-best-time-to-visit-hawaii.18a80e30438fe6e7d6a7.webp",
     "static/media/fun-visit-to-budapest.webp": "/itivp3/static/media/fun-visit-to-budapest.cb6ee6b639572f2ec477.webp",
     "static/media/6-best-day-trip-to-san-antonio-texas.webp": "/itivp3/static/media/6-best-day-trip-to-san-antonio-texas.562a17d2665f62650ff0.webp",
@@ -24,20 +25,24 @@
     "static/media/denmark.webp": "/itivp3/static/media/denmark.f2bebae1bfde13211ffc.webp",
     "static/media/brazil.webp": "/itivp3/static/media/brazil.dc5003b12fb357a198d6.webp",
     "static/media/nambia.webp": "/itivp3/static/media/nambia.b1e7aae77e99e612ba52.webp",
+    "static/media/about-me4.webp": "/itivp3/static/media/about-me4.fb81448fd57f2ffb0ced.webp",
     "static/media/euclid-flex.ttf": "/itivp3/static/media/euclid-flex.f4048ce40bd0d394eb85.ttf",
     "static/media/porec.webp": "/itivp3/static/media/porec.11e7d6b982666b6beb5d.webp",
     "static/media/greece.webp": "/itivp3/static/media/greece.f21c6d1aa5991c8318b3.webp",
     "static/media/dominican-republic.webp": "/itivp3/static/media/dominican-republic.1aad6f33359a6e06fdaf.webp",
+    "static/media/about-me1.webp": "/itivp3/static/media/about-me1.d376e7208efb47b63e2e.webp",
     "static/media/Ontario.webp": "/itivp3/static/media/Ontario.36ebbd697cab8e70dfdb.webp",
     "static/media/gallery-main.webp": "/itivp3/static/media/gallery-main.c2b4e6962b545ae98351.webp",
     "static/media/croatia.webp": "/itivp3/static/media/croatia.09abc13689cf74284e50.webp",
+    "static/media/about-me2.webp": "/itivp3/static/media/about-me2.44cfb2b35b1983e2edb1.webp",
+    "static/media/about-me3.webp": "/itivp3/static/media/about-me3.30c5c2ee261e0c27faaf.webp",
     "static/media/logo.png": "/itivp3/static/media/logo.0d1891e51f5d3de71b15.png",
     "index.html": "/itivp3/index.html",
-    "main.7e317344.css.map": "/itivp3/static/css/main.7e317344.css.map",
-    "main.53848bd4.js.map": "/itivp3/static/js/main.53848bd4.js.map"
+    "main.3685f339.css.map": "/itivp3/static/css/main.3685f339.css.map",
+    "main.18007232.js.map": "/itivp3/static/js/main.18007232.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e317344.css",
-    "static/js/main.53848bd4.js"
+    "static/css/main.3685f339.css",
+    "static/js/main.18007232.js"
   ]
 }
