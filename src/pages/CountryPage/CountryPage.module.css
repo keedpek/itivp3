@@ -1,0 +1,237 @@
+.country-page-main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  background-image: url("../../assets/images/croatia/croatiaPage.webp");
+  position: relative;
+}
+
+.country-page-main-section::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000002b;
+}
+
+.main-section-text-container {
+  text-align: center;
+  width: 70%;
+  z-index: 10;
+  font-size: 170px;
+}
+
+.main-section-text-container > h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.country-info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.country-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.country-info-container > h2 {
+  color: #4169e1;
+  font-size: 80px;
+}
+
+.country-info-container > h3 {
+  color: #5b5b5b;
+  font-size: 30px;
+}
+
+.country-info-container > p {
+  font-size: 18px;
+}
+
+.country-page-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5% 30px;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.country-page-section > h2 {
+  background: linear-gradient(135deg, #5c7bd8 0%, #4169e1 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header > h3 {
+  font-size: 36px;
+  width: 30%;
+}
+
+.section-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-filter-select {
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+.sights-list {
+  width: 100%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+}
+
+.view-all-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.view-all-btn {
+  background-color: transparent;
+  border: 1px solid #4169e1;
+  border-radius: 30px;
+  color: #4169e1;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.view-all-btn:hover {
+  transform: scale(0.95);
+}
+
+.stories-container {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.nav-btn {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: #cdcccc;
+  color: #fff;
+}
+
+.active-nav-btn {
+  background-color: #4169e1;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.active-nav-btn:hover {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+  .sights-list {
+    grid-template-columns: 48% 48%;
+  }
+
+  .story-component {
+    max-width: 400px;
+  }
+
+  .main-section-text-container h1 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .country-page-main-section {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .main-section-text-container h1 {
+    font-size: 0.4em;
+  }
+
+  .country-info-container {
+    width: 80%;
+  }
+
+  .sights-list {
+    grid-template-columns: 100%;
+  }
+
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .section-header h3 {
+    width: 60%;
+  }
+
+  .buttons-container {
+    justify-content: center;
+  }
+
+  .nav-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section-text-container h1 {
+    font-size: 0.2em;
+  }
+
+  .country-info-container h2 {
+    font-size: 50px;
+  }
+
+  .section-header h3 {
+    width: 100%;
+  }
+
+  .story-component {
+    max-width: 100%;
+  }
+
+  .view-all-btn {
+    width: 100%;
+  }
+}

@@ -78,7 +78,6 @@ button:focus {
 }
 
 .mobile-menu {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -98,7 +97,9 @@ button:focus {
   margin: 20px 0;
 }
 
-.mobile-menu ul li a {
+.mobile-menu ul li button {
+  background-color: transparent;
+  border: none;
   color: #fff;
   font-size: 22px;
   text-decoration: none;

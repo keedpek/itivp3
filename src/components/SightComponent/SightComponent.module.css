@@ -1,0 +1,8 @@
+.sight-component img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sight-component figcaption {
+  font-size: 26px;
+}
