@@ -1,4 +1,4 @@
-import { MAIN_ROUTE, STORIES_ROUTE, GALLERY_ROUTE, ABOUT_ROUTE, COUNTRY_ROUTE, STORY_ROUTE } from "../utils/consts";
+import { MAIN_ROUTE, STORIES_ROUTE, GALLERY_ROUTE, ABOUT_ROUTE, COUNTRY_ROUTE } from "../utils/consts";
 import Main from "../pages/MainPage/MainPage";
 import StoriesPage from "../pages/StoriesPage/StoriesPage";
 import GalleryPage from "../pages/GalleryPage/GalleryPage";
@@ -28,7 +28,7 @@ export const routes = [
     Component: CountryPage
   },
   {
-    path: STORY_ROUTE + '/:id',
+    path: STORIES_ROUTE + '/:id',
     Component: StoryPage
   },
 ]

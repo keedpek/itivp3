@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: url(../../assets/images/pageImages/404bg.webp);
+}
+
+.container::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.468);
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container h2 {
+  font-size: 64px;
+  z-index: 101;
+}
+
+.container p {
+  font-size: 32px;
+  z-index: 101;
+}
+
+.to-main-btn {
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 101;
+}

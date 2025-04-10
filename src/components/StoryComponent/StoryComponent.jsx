@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './StoryComponent.module.css'
+import { Link } from 'react-router-dom';
 
 const StoryComponent = ({story}) => {
   return (
@@ -11,7 +12,7 @@ const StoryComponent = ({story}) => {
       </div>
       <h3 className={style["story-title"]}>{story.title}</h3>
       <p className={style["short-story"]}>{story.short}</p>
-      <a className={style["full-post-link"]} href="">Читать весь пост</a>
+      <Link to={`/stories/${story.href}`}>Читать весь пост</Link>
     </div>
   );
 };
