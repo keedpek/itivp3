@@ -1,0 +1,45 @@
+.dropdown-container {
+  position: relative;
+}
+
+.select-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 10px;
+  padding: 15px 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  background-color: #fafafa;
+  border-radius: 20px;
+  right: 0;
+  top: 40px;
+  width: 200px;
+}
+
+.option {
+  border: 1px solid #d4d4d4;
+  padding: 10px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: rgb(203, 203, 255);
+}
+
+.option:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.option:last-child {
+  border-radius: 0 0 20px 20px;
+}

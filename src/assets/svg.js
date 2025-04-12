@@ -30,3 +30,9 @@ export const instagramIcon = (
     <path d="M60.3676 17.0109C60.3676 19.4348 58.4 21.3881 55.9904 21.3881C53.5666 21.3881 51.6133 19.4205 51.6133 17.0109C51.6133 14.5871 53.5809 12.6338 55.9904 12.6338C58.4 12.6338 60.3676 14.6014 60.3676 17.0109Z" fill="#232536"/>
   </svg>
 )
+
+export const dropdownArrow = (
+  <svg width="16px" height="8px" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 8l-8-8h16z"/>
+  </svg>
+) 

@@ -1,33 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './StoryPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { useParams } from 'react-router-dom';
 import { storiesList } from '../../utils/db';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 const StoryPage = () => {
   const { id } = useParams()
-  const [selectedAction, setSelectedAction] = useState("");
   const story = storiesList.find(story => story.href === id)
-
-  const handleSelectChange = (e) => {
-    const action = e.target.value;
-    setSelectedAction(action);
-
-    switch (action) {
-      case "add-to-favorites":
-        addToFavorites();
-        break;
-      case "copy-link":
-        copyLinkToClipboard();
-        break;
-      case "show-on-map":
-        openMap();
-        break;
-      default:
-        break;
-    }
-  };
 
   const addToFavorites = () => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -54,6 +35,20 @@ const StoryPage = () => {
     window.open(googleMapsUrl, "_blank");
   };
 
+  const dropdownOptions = {
+    addToFavorites: {
+      option: "Добавить в избранное",
+      action: addToFavorites
+    }, 
+    copyLinkToClipboard:  {
+      option: "Скопировать ссылку на историю",
+      action: copyLinkToClipboard
+    },
+    openMap:  {
+      option: "Открыть на карте",
+      action: openMap
+    },
+  }
 
   return (
     <>
@@ -71,18 +66,9 @@ const StoryPage = () => {
       <article className={style["story"]}>
         <div className={style["meta"]}>
           <h4>Риека, Хорватия</h4>
-          <div>
+          <div className={style["right-side"]}>
             <span>27 фев, 2024 • ⏲ 8 мин</span>
-            <select
-              value={selectedAction}
-              onChange={handleSelectChange}
-              className={style["action-select"]}
-            >
-              <option value="">Выберите действие</option>
-              <option value="add-to-favorites">Добавить в избранное</option>
-              <option value="copy-link">Скопировать ссылку</option>
-              <option value="show-on-map">Показать на карте</option>
-            </select>
+            <Dropdown options={dropdownOptions} />
           </div>
         </div>
         <h3>Где море встречается с историей</h3>
