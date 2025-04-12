@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './StoryPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -9,15 +9,32 @@ import Dropdown from '../../components/Dropdown/Dropdown';
 const StoryPage = () => {
   const { id } = useParams()
   const story = storiesList.find(story => story.href === id)
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  const [isFavorite, setIsFavorite] = useState(favorites.includes(story.href))
 
+  
   const addToFavorites = () => {
-    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     if (!favorites.includes(story.href)) {
       favorites.push(story.href);
       localStorage.setItem("favorites", JSON.stringify(favorites));
+      setIsFavorite(true)
       alert("История добавлена в избранное!");
     } else {
       alert("История уже в избранном!");
+    }
+  };
+
+  const removeFromFavorites = () => {
+    if (favorites.includes(story.href)) {
+      console.log(story.href);
+      console.log(favorites);
+      favorites = favorites.filter(favStory => favStory !== story.href);
+      console.log(favorites);
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+      setIsFavorite(false)
+      alert("История удалена из избранного!");
+    } else {
+      alert("Истории нет в избранном!");
     }
   };
 
@@ -36,9 +53,9 @@ const StoryPage = () => {
   };
 
   const dropdownOptions = {
-    addToFavorites: {
-      option: "Добавить в избранное",
-      action: addToFavorites
+    favorites: {
+      option: isFavorite ? "Убрать из избранного" : "Добавить в избранное",
+      action: isFavorite ? removeFromFavorites : addToFavorites,
     }, 
     copyLinkToClipboard:  {
       option: "Скопировать ссылку на историю",

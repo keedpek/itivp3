@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import style from './StoriesPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -52,7 +52,7 @@ const StoriesPage = () => {
             </div>
           </div>
           <div className={style["stories-container"]}>
-            {stories.map(story => <StoryComponent story={story} />)}
+            {stories.map(story => <StoryComponent story={story} key={story.title}/>)}
           </div>
         </section>
 
