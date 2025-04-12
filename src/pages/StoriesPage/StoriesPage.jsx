@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './StoriesPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -7,6 +7,16 @@ import { storiesList } from '../../utils/db';
 import StoryComponent from '../../components/StoryComponent/StoryComponent';
 
 const StoriesPage = () => {
+  const [stories, setStories] = useState(storiesList)
+  const favorites = []
+  const favoritesHrefs = JSON.parse(localStorage.getItem("favorites")) || [];
+  if (favoritesHrefs.length !== 0) {
+    favoritesHrefs.forEach(href => {
+      const foundedStory = storiesList.find(story => story.href === href)    
+      favorites.push(foundedStory)
+    })
+  }
+
   return (
     <>
       <Header/>
@@ -26,10 +36,23 @@ const StoriesPage = () => {
               <h3>Лучшие истории</h3>
               <span>Посмотрите актуальные истории</span>
             </div>
-            <button className={style["view-all-btn"]}>Смотреть все истории</button>
+            <div>
+              <button 
+                className={style["view-all-btn"]}
+                onClick={() => {setStories(storiesList)}}
+              >
+                Смотреть все истории
+              </button>
+              <button 
+                className={style["view-all-btn"]}
+                onClick={() => {setStories(favorites)}}
+              >
+                Избранные истории
+              </button>
+            </div>
           </div>
           <div className={style["stories-container"]}>
-            {storiesList.map(story => <StoryComponent story={story} />)}
+            {stories.map(story => <StoryComponent story={story} />)}
           </div>
         </section>
 
