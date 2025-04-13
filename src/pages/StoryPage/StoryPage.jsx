@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './StoryPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { storiesList } from '../../utils/db';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 const StoryPage = () => {
   const { id } = useParams()
-  const story = storiesList.find(story => story.href === id)
+  const navigate = useNavigate()
+  const [story, setStory] = useState({})
+  
+ useEffect(() => {
+  const fetchedStory = storiesList.find(story => story.href === id)
+  console.log(fetchedStory);
+
+  if(fetchedStory) {
+    setStory(fetchedStory)
+  } else {
+    navigate("/404")
+  }
+ }, [id])
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
   const [isFavorite, setIsFavorite] = useState(favorites.includes(story.href))
 
