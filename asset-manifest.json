@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/itivp3/static/css/main.8dfac2dc.css",
-    "main.js": "/itivp3/static/js/main.824fa20a.js",
+    "main.js": "/itivp3/static/js/main.f008ce4d.js",
     "static/media/stories-main-bg.webp": "/itivp3/static/media/stories-main-bg.a336442af413a27a658e.webp",
     "static/media/mixkit-mime-in-front-of-the-eiffel-tower.mp4": "/itivp3/static/media/mixkit-mime-in-front-of-the-eiffel-tower.35cc2ad499abb570dcba.mp4",
     "static/media/croatiaPage.webp": "/itivp3/static/media/croatiaPage.dcd7799473d1b08ae00e.webp",
@@ -49,10 +49,10 @@
     "static/media/logo.png": "/itivp3/static/media/logo.0d1891e51f5d3de71b15.png",
     "index.html": "/itivp3/index.html",
     "main.8dfac2dc.css.map": "/itivp3/static/css/main.8dfac2dc.css.map",
-    "main.824fa20a.js.map": "/itivp3/static/js/main.824fa20a.js.map"
+    "main.f008ce4d.js.map": "/itivp3/static/js/main.f008ce4d.js.map"
   },
   "entrypoints": [
     "static/css/main.8dfac2dc.css",
-    "static/js/main.824fa20a.js"
+    "static/js/main.f008ce4d.js"
   ]
 }
