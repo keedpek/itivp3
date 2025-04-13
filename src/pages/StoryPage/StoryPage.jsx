@@ -10,19 +10,18 @@ const StoryPage = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const [story, setStory] = useState({})
-  
- useEffect(() => {
-  const fetchedStory = storiesList.find(story => story.href === id)
-  console.log(fetchedStory);
-
-  if(fetchedStory) {
-    setStory(fetchedStory)
-  } else {
-    navigate("/404")
-  }
- }, [id])
+  const [isFavorite, setIsFavorite] = useState(false)
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-  const [isFavorite, setIsFavorite] = useState(favorites.includes(story.href))
+  
+  useEffect(() => {
+    const fetchedStory = storiesList.find(story => story.href === id)
+    if(fetchedStory) {
+      setStory(fetchedStory)
+      setIsFavorite(favorites.includes(fetchedStory.href))
+    } else {
+      navigate("/404")
+    }
+  }, [id])
 
   
   const addToFavorites = () => {
