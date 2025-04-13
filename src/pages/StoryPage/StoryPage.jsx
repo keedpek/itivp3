@@ -82,9 +82,9 @@ const StoryPage = () => {
 
       <article className={style["story"]}>
         <div className={style["meta"]}>
-          <h4>Риека, Хорватия</h4>
+          <h4>{story.place}</h4>
           <div className={style["right-side"]}>
-            <span>27 фев, 2024 • ⏲ 8 мин</span>
+            <span>{story.time}</span>
             <Dropdown options={dropdownOptions} />
           </div>
         </div>
