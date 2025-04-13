@@ -8,6 +8,7 @@ import StoryComponent from '../../components/StoryComponent/StoryComponent';
 
 const StoriesPage = () => {
   const [stories, setStories] = useState(storiesList)
+  const [list, setList] = useState('all')
   const favorites = []
   const favoritesHrefs = JSON.parse(localStorage.getItem("favorites")) || [];
   if (favoritesHrefs.length !== 0) {
@@ -38,22 +39,36 @@ const StoriesPage = () => {
             </div>
             <div>
               <button 
-                className={style["view-all-btn"]}
-                onClick={() => {setStories(storiesList)}}
+                className={`${style["view-all-btn"]} ${list === 'all' && style["active"]}`}
+                onClick={() => {
+                  setStories(storiesList)
+                  setList('all')
+                }}
               >
                 Смотреть все истории
               </button>
               <button 
-                className={style["view-all-btn"]}
-                onClick={() => {setStories(favorites)}}
+                className={`${style["view-all-btn"]} ${list === 'favs' && style["active"]}`}
+                onClick={() => {
+                  setStories(favorites)
+                  setList('favs')
+                }}
               >
                 Избранные истории
               </button>
             </div>
           </div>
-          <div className={style["stories-container"]}>
-            {stories.map(story => <StoryComponent story={story} key={story.title}/>)}
-          </div>
+          {stories.length !== 0 ?
+          (
+            <div className={style["stories-container"]}>
+              {stories.map(story => <StoryComponent story={story} key={story.title}/>)}
+            </div>
+          ) : (
+            <div className={style["empty-container"]}>
+              <p>Историй нет</p>
+            </div>
+          )}
+          
         </section>
 
         <Pagination />
