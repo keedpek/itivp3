@@ -14,6 +14,7 @@ const StoryPage = () => {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
   
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchedStory = storiesList.find(story => story.href === id)
     if(fetchedStory) {
       setStory(fetchedStory)

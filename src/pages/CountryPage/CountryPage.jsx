@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import style from './CountryPage.module.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -10,6 +10,10 @@ import StoryComponent from '../../components/StoryComponent/StoryComponent';
 const CountryPage = () => {
   const { id } = useParams()
   const country = countriesList.find(country => country.href === id)
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   
   return (
     <>

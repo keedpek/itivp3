@@ -15,7 +15,10 @@ const Header = () => {
           <li>
             <button
               className={style.navButton}
-              onClick={() => {navigate(MAIN_ROUTE)}}
+              onClick={() => {
+                navigate(MAIN_ROUTE)
+                window.scrollTo(0, 0);
+              }}
             >
               Главная
             </button>
@@ -23,7 +26,10 @@ const Header = () => {
           <li>
             <button
               className={style.navButton}
-              onClick={() => {navigate(STORIES_ROUTE)}}
+              onClick={() => {
+                navigate(STORIES_ROUTE)
+                window.scrollTo(0, 0);
+              }}
             >
               Истории
             </button>
@@ -31,7 +37,10 @@ const Header = () => {
           <li>
             <button
               className={style.navButton}
-              onClick={() => {navigate(GALLERY_ROUTE)}}
+              onClick={() => {
+                navigate(GALLERY_ROUTE)
+                window.scrollTo(0, 0);
+              }}
             >
               Галерея
             </button>
@@ -39,7 +48,10 @@ const Header = () => {
           <li>
             <button
               className={style.navButton}
-              onClick={() => {navigate(ABOUT_ROUTE)}}
+              onClick={() => {
+                navigate(ABOUT_ROUTE)
+                window.scrollTo(0, 0);
+              }}
             >
               О себе
             </button>
